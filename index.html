@@ -1,34 +1,53 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Carnet de contact</title>
-  <link rel="stylesheet" type="text/css" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+ 
+    <link rel="stylesheet" href="style.css" >
+    
+
+    <title>Contact Directory</title>
 </head>
-<body><div>
-    <div>
-        <h2 class="contena1"> de contact</h2>
-    </div>
-    <div>
-<h2 class="contena1">Carnet de contact</h2>
-<form>
-  <label for="nom">Prénom:</label><br>
-  <input type="text" id="nom" name="nom"><br>
+<body>
+   <div class="principale">
+       <div class="1">
+             <span class="titre1">Repertoire des contacts </span>
+       </div>
+    
+   <div class="second">
+    
+       <div class="second-1">
+             <span class="titre2">Formulaire de contact </span>
+             <form id="contactForm"><br>
+                <label for="firstName">Prénom</label>
+                <input type="text" id="Prénom" name="Prénom" required>
+                
+                <label for="lastName">Nom</label>
+                <input type="text" id="Nom" name="Nom" required>
+                
+                <label for="phone">Télephone</label>
+                <input type="text" id="phone" name="phone" required>
+                
+                <label for="group">Group:</label>
+                <input type="text" id="group" name="group" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="bio">Bio:</label>
+                <textarea id="bio" name="bio" rows="4" cols="50" required></textarea>
+                <div class="button"><button class="btn-1">Créer</button><button class="btn-2">Réinit</button></div>
+            </form>
+       </div>
+    
 
-
-  <label for="prenom">Nom:</label><br>
-  <input type="text" id="prenom" name="prenom"><br>
-
-
-  <label for="telNo">Telephone:</label><br>
-  <input type="tel" size="" id="telNo" name="telNo" placeholder="123-4567-89"><br>
-  <label for="email">Email:</label><br>
-
-  <input type="email" id="email" name="email"><br>
-  <label for="commentaire">Commentaire:</label><br>
-  
-  <textarea id="commentaire" name="commentaire"></textarea><br>
-  <input type="submit" value="Envoyer">
-</form>
-</div>
+       <div class="second-2">
+            <span class="titre3">Liste de contact</span>
+       </div>
+   </div>
+   </div>
+    <script src="script.js"></script>
+    
 </body>
 </html>
